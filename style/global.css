@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
 
 * {
     margin: 0;
@@ -10,17 +10,17 @@ body {
     background-color: white;
 }
 
-.akaya-kanadaka-regular {
-    font-family: "Akaya Kanadaka", system-ui;
+.afacad-flux {
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
 
-
 .title {
     font-size: 3rem;
     color: black;
-    font-family: "Akaya Kanadaka", system-ui;
+    font-family: "Afacad Flux", sans-serif;
     font-weight: 400;
     font-style: normal;
 }  
@@ -35,17 +35,6 @@ body {
     border: 5px solid rgb(255, 255, 255);
 }
 
-.nav {
-    background-color: rgb(26, 196, 34);
-    width: 33%;
-    height: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid rgb(255, 255, 255);
-}
-
-
 .main {
     background-color:rgb(255, 221, 0);
     width: 100%; 
@@ -55,13 +44,6 @@ body {
     align-items: center;
     border: 5px solid rgb(255, 255, 255);
 }
-
-.container {
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-} 
 
 .section{
     background-color: blue;
@@ -73,25 +55,102 @@ body {
     border: 5px solid rgb(255, 255, 255);
 }
 
-
-
-.article {
-    background-color: rgb(255, 0, 157) ;
-    width: 100%;
-    height: 40rem;
+.footer{
+    background-color: rgb(196, 196, 196);
+    width: 25%;
+    height: 20rem;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 5px solid rgb(255, 255, 255);
 }
 
-
-.footer{
-    background-color: rgb(196, 196, 196);
+.container {
     width: 100%;
-    height: 15rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid rgb(255, 255, 255);
+    flex-wrap: nowrap;
+    justify-content: space-between;
+} 
+
+.container-footer-1 {
+    width: 100%;
+    display: flex;
+}
+
+.container-footer-2 {
+    width: 100%;
+    display: flex;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .header{
+        width: 100%;
+    }
+
+    .section{
+        width: 100%;
+    }
+
+    .footer{
+        width: 50%;
+    }
+
+    .container-footer-1{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: row
+    }
+
+    .container-footer-2{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .header{
+        width: 100%;
+    }
+
+    .section{
+        width: 100%;
+    }    
+
+    .footer{
+        width: 100%;
+    }
+
+    .container-footer-1 {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    
+    .container-footer-2 {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .all-footer{
+        display: flex;
+        flex-direction: row;
+    }
 }
